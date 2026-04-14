@@ -16,9 +16,9 @@ class CPB_Frontend {
             wp_enqueue_style( 'cpb-style', CPB_PLUGIN_URL . 'assets/css/cpb-style.css', array(), '1.0.0' );
             wp_enqueue_script( 'cpb-script', CPB_PLUGIN_URL . 'assets/js/cpb-script.js', array(), '1.0.0', true );
 
-            // Inject dynamic color options into the CSS
-            $bg_color   = get_option( 'cpb_banner_bg_color', '#ffffe0' );
-            $text_color = get_option( 'cpb_banner_text_color', '#333333' );
+            // Strict Security Fix: Escape attributes before outputting them in inline CSS
+            $bg_color   = esc_attr( get_option( 'cpb_banner_bg_color', '#ffffe0' ) );
+            $text_color = esc_attr( get_option( 'cpb_banner_text_color', '#333333' ) );
             
             $custom_css = "
                 .cpb-banner-wrapper {
