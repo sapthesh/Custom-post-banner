@@ -1,0 +1,35 @@
+.cpb-banner-wrapper {
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.cpb-banner-inner {
+    flex-grow: 1;
+    line-height: 1.6;
+}
+
+.cpb-banner-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.cpb-banner-close {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-size: 24px;
+    line-height: 1;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.cpb-banner-close:hover {
+    opacity: 1;
+}
