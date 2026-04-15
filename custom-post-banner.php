@@ -3,6 +3,7 @@
  * Plugin Name: Custom Post Banner
  * Description: Dynamically prepends a customizable banner to the content of all single posts.
  * Version: 1.0.0
+ * License: GPL v2 or later
  * Author: Sapthesh V
  */
 
